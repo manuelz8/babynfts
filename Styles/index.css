@@ -1,0 +1,509 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+}
+body {
+    margin: 0;
+    background-color: #000516;
+    color: white;
+    background-image: url(../Assets/fondo.svg);
+}
+
+
+/* MENU */
+
+.navbar__section {
+width: 100%;
+color:white;
+height: 64px;
+border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+padding: 10px 0;
+position: fixed;
+background-color: #000516d9;
+box-sizing: border-box;
+z-index: 10;
+}
+
+.navbar__section-container {
+    max-width: 1024px;
+    display: flex;
+    flex-direction: row;
+    height: 43px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+
+.navbar__logo {
+    width: 30%;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.navbar__section .navbar__logo-text {
+    color: white;
+    text-transform: uppercase
+}
+
+.navbar__menu {
+    font-size: 16px;
+}
+.navbar__menu-list {
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+}
+
+.navbar__menu-link{
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+/* Cards */
+.card {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ff4c60d4;
+    border-radius: 60px;
+}
+
+section.card.section-about{
+    width: 100%;
+    margin: 0 auto;
+    background-color:#FF4C60d4;
+    border-radius: 60px;
+    padding: 10px 30px
+}
+
+section.card.section-roadmap:nth-child(1){
+    width: 50%;
+    background-color: #FF4C60d4;
+    height: 180px;
+    margin: 0 auto;
+    margin-left: 0;
+
+}
+section.card.section-roadmap:nth-child(2){
+    width: 50%;
+    background-color: #6C6CE5d4;
+    height: 180px;
+    margin: 0px auto;
+    margin-right: 0;
+    
+}
+section.card.section-roadmap:nth-child(3){
+    width: 50%;
+    background-color: #FFD15Cd4;
+    height: 180px;
+    margin: 0 auto;
+    margin-left: 0;
+}
+section.card.section-roadmap:nth-child(4){
+    width: 50%;
+    background-color: #44D7B6d4;
+    height: 180px;
+    margin: 0px auto;
+    margin-right: 0;
+    margin-bottom: 40px;
+    
+}    
+
+section.card.section-roadmap h2{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 0;
+    margin: 10px auto 0px;
+
+}
+/*Banner*/
+.section-banner {
+    color: white;
+    text-align: center;
+    height: 100vh;
+    min-height: 700px;
+    background-image:url(../Assets/banner-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60%;
+}
+    
+.section-banner-content{
+    margin-top: auto 50px;
+
+}
+
+.section-banner__heading{
+    font-weight: 900;
+    padding-top: 100px;
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.section-banner__button{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    color: #f3ba2f;
+    margin: 0 auto;
+    font-weight:700;
+    border: transparent;
+    border-radius: 40px;
+    font-size: 24px;
+    width: 15%;
+}
+.section-banner__button a{
+    display: flex;
+    flex-direction: row;
+    color:#f3ba2f ;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 auto;
+
+}
+.section-banner__button span{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.section-banner__button-image{
+    height: 40px;
+    margin: auto;
+    padding-right: 20px;
+}
+
+.section-banner__subheading{
+    margin: 25px 80px 0;
+    padding: 0 15%;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.section-banner__social-icon{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    
+}
+
+
+.section-banner__pancake-image{
+    height: 40px;
+    margin-top: -10px
+}
+.section-banner__buy-button{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FF4C60;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 800;
+    border-radius: 40px;
+    border: white solid;
+    position: relative;
+    
+}
+
+ button:hover .section-banner__button-content{
+     visibility:hidden ;
+     
+     
+}
+
+button:hover .section-banner__secondary-text{
+    visibility: visible;
+  
+}
+
+
+.section-banner__secondary-text{
+    position:absolute;
+    left:50px;
+    right:50px;
+    top:15px;
+    color: white;
+    font-size: 32px;
+    font-weight: 800;
+    visibility: hidden;
+  
+
+}
+ .section-banner__buy-button span{
+     margin: 0 auto;
+}
+
+.section-banner__buy-button p{
+    margin: 0 auto;
+    color: white
+}
+
+.section-banner__scroll-down {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    bottom: 32px;
+    align-items: center;
+    transition: bottom 0.3s ease;
+}
+.section-banner__scroll-down:hover {
+    bottom: 40px;
+}
+.section-banner__scroll-down span {
+    margin-top: 30px;
+}
+.section-banner_scroll-down-icon {
+    width: 20px;
+    margin: 10px auto;
+    
+}
+a.section-banner__scroll-link{
+    color: white;
+    text-decoration:none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+/* Secciones */
+
+.section {
+    max-width: 1024px;
+    margin: 0 auto 100px;
+    height: 100vh;
+}
+
+.section-tokenomics{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 900;
+    margin: 40px;
+}
+
+.section-tokenomics li {
+    list-style-type:disc;
+    list-style-position: inside;
+    line-height: 80px;
+    font-size: 32px;
+    margin: 0 auto;
+    font-weight: 800;
+    color: white;
+    padding-left: 12px;
+}
+
+.section-about{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-about h3{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0 ;
+}
+.section-about p {
+    text-align: justify;
+    font-size: 24px;
+    margin: 5px;
+}
+.section-roadmap{
+    position:relative
+}
+.section-roadmap__cards{
+    display: flex;
+    flex-direction: column;
+    max-height: 90vh;
+
+}
+.section-roadmap h2{
+    text-align: center;
+    font-weight: 800;
+    margin: 40px auto 40px;
+}
+.section-roadmap ul{
+    margin: 0 auto;
+    margin-top: 0;
+    font-size: 16px;
+}
+.section-contact{
+    position:relative;
+    max-height:  70vh;
+}
+.section-contact__container{
+    
+    margin: 10% auto 0;
+}
+img.section-contact__social-icon1{
+    width: 200x;
+    height: 200px;
+    margin: 0 20px
+}
+img.section-contact__social-icon2{
+    width: 200x;
+    height: 200px;
+    margin: 0 20px;
+}
+.section-contact-text{
+    margin: 40px auto;
+    text-align: center;
+    font-size: 24px;
+
+}
+
+/* Footer */
+
+footer {
+    background-color: transparent;
+    height: 200px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    bottom: 0;
+    width: 100%;
+    background-color: #000516;
+}
+
+.footer-container{
+    max-width: 1024px;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    margin: 15px auto;
+}
+.footer-menu{
+    display: flex;
+    flex-direction:column;
+}
+ul.footer__menu-list{
+    font-size: 16px;
+    list-style:none;
+}
+li.footer__menu-item{
+    margin: 5px;
+}
+/* RESPONSIVE*/
+
+@media screen and (max-width: 1024px){
+    .navbar__logo{
+        display: none;
+    }
+    .navbar__menu-list{
+        padding: 0px 25px;
+    }
+    .section-banner__heading{
+        font-size: 32px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .section-banner__button{
+        width: 40%;
+    }
+    .section-banner__button-image{
+        height: 30px;
+        padding-right: 10px;
+    }
+    .section-banner__button p{
+        font-size: 20px;
+    }
+    .section-banner__subheading {
+        margin: 10px 0px 0;
+        padding: 0px 10px;
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .section-banner__social-buttons{
+        margin: 40px;
+    }
+    .section-banner__buy-button{
+        width: 50%;
+    }
+    .section-banner__pancake-image {
+        height: 25px;
+    }
+    p.section-banner__main-text{
+        font-size: 20px;
+    }
+    .section-banner__scroll-down{
+        display: none;
+    }
+    .section-heading{
+        font-size: 55px;
+    }
+    .section-tokenomics__list{
+        padding: 20px 10px;
+    }
+    .section-tokenomics li {
+        font-size: 25px;
+        line-height: 35px;
+        margin: 20px auto;
+    }
+    .section-tokenomics{
+        height: 80vh;
+        margin: 0 auto 10px;
+    }
+    .section-about{
+        height: 130vh;
+    }
+    .section-about h3{
+        font-size: 25px;
+        margin: 10px;
+    }
+    .section-about p{
+        font-size: 20px;
+        margin: 10px;
+    }
+    section.card.section-roadmap:nth-child(1){
+        width: 75%;
+    
+    
+    }
+    section.card.section-roadmap:nth-child(2){
+        width: 75%;
+        margin-top: 20px;
+        padding: 0 5px;
+    }
+    section.card.section-roadmap:nth-child(3){
+        width: 75%;
+        margin-top: 20px;
+        padding: 0 5px;
+    }
+    section.card.section-roadmap:nth-child(4){
+        width: 75%;
+        margin-top: 20px;
+        padding: 0 5px;
+    }
+    .section-contact__container{
+        width: 50%;
+    }
+    .sections,.footer-container{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .section-about {
+        height: 160vh;
+    }
+    li.footer__menu-item:nth-child(1) {
+        display: none;
+    }
+    section.card.section-roadmap:nth-child(2) {
+        height: 240px;
+    }
+}
+@media screen and (max-width: 330px){
+    .section-about {
+        height: 200vh;
+    }
+    section.card.section-roadmap:nth-child(2) {
+        height: 250px;
+    }
